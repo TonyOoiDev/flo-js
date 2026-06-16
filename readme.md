@@ -1,8 +1,8 @@
 ## Steps to run the code
 
-1. Create an .env file base on .env.sample. This file is used for the variables in compose.yml.
+1. Create an .env file in root base on .env.sample. This file is used for the postgresql password and username variables in compose.yml. Please provide password and username.
 
-2. Create a config.json file base on config.json.sample. This is the config file for postgresql db connection.
+2. Create a config.json file base on config.json.sample in /src/db. This is the config file for postgresql db connection. Please provide password and username.
 
 3. Run "npm install" to install all the dependencies.
 
