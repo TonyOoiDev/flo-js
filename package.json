@@ -1,0 +1,16 @@
+{
+  "name": "flo-meter-readings",
+  "version": "1.0.0",
+  "description": "Read meter reading from csv file and calculate total consumption per day",
+  "license": "ISC",
+  "author": "Tony Ooi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "postgres": "^3.4.9"
+  }
+}

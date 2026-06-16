@@ -1,0 +1,7 @@
+# configuration files
+**/.env
+**/config.json
+
+# folders
+node_modules/
+postgres-db-data/
