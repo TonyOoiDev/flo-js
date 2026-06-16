@@ -36,9 +36,8 @@ const roundNDecimalDigit = (val, dp) => {
     return larger/factor
 }
 
-const processCSVFile = async () => {
+const processCSVFile = async (csvFileName) => {
     try {
-        const csvFileName = './csv_data/nem12#0123456789012345#mda1#retail1.csv';
         const fileStream = fs.createReadStream(csvFileName);
 
         const rl = readline.createInterface({
@@ -104,8 +103,8 @@ const processCSVFile = async () => {
 
 (async () => {
     try {
-        await processCSVFile();
-        return
+        const csvFileName = './csv_data/nem12#0123456789012345#mda1#retail1.csv';
+        await processCSVFile(csvFileName);
     } catch (err) {
         console.error(err)
         process.exit(1);
